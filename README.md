@@ -4,8 +4,9 @@ Screenshots
 Below are examples of what you’ll see:
 
 The Input Form: Where you enter button names and links.
+<image-card alt="Gradio UI for customizing buttons" src="screenshot_ui.png" ></image-card>
 The Generated Webpage: The final page with your custom buttons.
-
+<image-card alt="Generated HTML webpage with buttons" src="screenshot_output.png" ></image-card>
 Features
 
 Easy-to-Use Form: A clean web form where you type button names, website links, and a filename for your webpage.
