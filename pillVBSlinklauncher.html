@@ -1,0 +1,248 @@
+<html>
+<head>
+    <title>Programmable Link Buttons</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            color: #333;
+        }
+        /* Individual button styles */
+        .pill-button-0 {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #007bff; /* Blue for Example */
+            border: none;
+            border-radius: 25px; /* Pill shape */
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.1s;
+        }
+        .pill-button-0:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+        .pill-button-0:active {
+            transform: scale(0.95);
+        }
+        .pill-button-1 {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #28a745; /* Green for Google */
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.1s;
+        }
+        .pill-button-1:hover {
+            background-color: #218838;
+            transform: scale(1.05);
+        }
+        .pill-button-1:active {
+            transform: scale(0.95);
+        }
+        .pill-button-2 {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #6f42c1; /* Purple for GitHub */
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.1s;
+        }
+        .pill-button-2:hover {
+            background-color: #5a32a3;
+            transform: scale(1.05);
+        }
+        .pill-button-2:active {
+            transform: scale(0.95);
+        }
+        .pill-button-3 {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #fd7e14; /* Orange for Stack Overflow */
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.1s;
+        }
+        .pill-button-3:hover {
+            background-color: #d8650e;
+            transform: scale(1.05);
+        }
+        .pill-button-3:active {
+            transform: scale(0.95);
+        }
+        .pill-button-4 {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #17a2b8; /* Cyan for Wikipedia */
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.1s;
+        }
+        .pill-button-4:hover {
+            background-color: #117a8b;
+            transform: scale(1.05);
+        }
+        .pill-button-4:active {
+            transform: scale(0.95);
+        }
+        .pill-button-5 {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #dc3545; /* Red for Reddit */
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.1s;
+        }
+        .pill-button-5:hover {
+            background-color: #b02a37;
+            transform: scale(1.05);
+        }
+        .pill-button-5:active {
+            transform: scale(0.95);
+        }
+        .pill-button-6 {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #c82333; /* Dark red for YouTube */
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.1s;
+        }
+        .pill-button-6:hover {
+            background-color: #a71d2a;
+            transform: scale(1.05);
+        }
+        .pill-button-6:active {
+            transform: scale(0.95);
+        }
+        .pill-button-7 {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #1da1f2; /* Light blue for Twitter */
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.1s;
+        }
+        .pill-button-7:hover {
+            background-color: #1a91da;
+            transform: scale(1.05);
+        }
+        .pill-button-7:active {
+            transform: scale(0.95);
+        }
+        .pill-button-8 {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #0077b5; /* Dark blue for LinkedIn */
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.1s;
+        }
+        .pill-button-8:hover {
+            background-color: #005983;
+            transform: scale(1.05);
+        }
+        .pill-button-8:active {
+            transform: scale(0.95);
+        }
+        .pill-button-9 {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #6c757d; /* Gray for BBC */
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.1s;
+        }
+        .pill-button-9:hover {
+            background-color: #5a6268;
+            transform: scale(1.05);
+        }
+        .pill-button-9:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+    <h1>Link Launcher</h1>
+    <div id="buttonContainer"></div>
+
+    <script>
+        // Array of URLs and corresponding button labels (edit in Notepad++)
+        const links = [
+            { url: "localhost:7860", label: "LH7860" },
+            { url: "https://www.google.com", label: "Google" },
+            { url: "https://www.github.com", label: "GitHub" },
+            { url: "https://www.stackoverflow.com", label: "Stack Overflow" },
+            { url: "https://www.wikipedia.org", label: "Wikipedia" },
+            { url: "https://www.reddit.com", label: "Reddit" },
+            { url: "https://www.youtube.com", label: "YouTube" },
+            { url: "https://www.twitter.com", label: "Twitter" },
+            { url: "https://www.linkedin.com", label: "LinkedIn" },
+            { url: "https://www.bbc.com", label: "BBC" }
+        ];
+
+        // Dynamically create pill-shaped buttons with specific labels and styles
+        const container = document.getElementById('buttonContainer');
+        links.forEach((link, index) => {
+            const button = document.createElement('button');
+            button.className = `pill-button-${index}`;
+            button.textContent = link.label;
+            button.onclick = () => window.open(link.url, '_blank');
+            container.appendChild(button);
+            container.appendChild(document.createElement('br'));
+        });
+    </script>
+</body>
+</html>
