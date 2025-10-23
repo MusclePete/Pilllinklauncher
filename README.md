@@ -4,9 +4,8 @@ Screenshots
 Below are examples of what you’ll see:
 
 The Input Form: Where you enter button names and links.
-<image-card alt="Gradio UI for customizing buttons" src="screenshot_ui.png" ></image-card>
 The Generated Webpage: The final page with your custom buttons.
-<image-card alt="Generated HTML webpage with buttons" src="screenshot_output.png" ></image-card>
+
 Features
 
 Easy-to-Use Form: A clean web form where you type button names, website links, and a filename for your webpage.
@@ -30,9 +29,7 @@ Make sure setup_and_run.bat and link_programmer.py are in the same folder.
 
 Run the Program (Windows):
 
-Double-click setup_and_run.bat in the folder, or open a Command Prompt (search for "cmd" in Windows), navigate to the folder with cd path\to\folder, and type:setup_and_run.bat
-
-
+Double-click setup_and_run.bat in the folder.
 The batch file will:
 Create a virtual environment (a safe space for the program’s tools) called venv in the folder.
 Install Gradio (the tool that makes the web form).
@@ -61,7 +58,7 @@ Run the program:python3 link_programmer.py
 Use the Web Form:
 
 The terminal will show a web address (e.g., http://127.0.0.1:7860). Copy and paste it into a browser like Chrome, Firefox, or Edge.
-You’ll see (like in images/screenshot_ui.png):
+You’ll see (like in the first screenshot):
 A heading: "Custom Link Programmer".
 10 pairs of text boxes for button names (e.g., "LH7860") and website links (e.g., "localhost:7860").
 A text box for the output filename (default: buttons.html).
@@ -84,7 +81,7 @@ A download link will appear. Click it to save your HTML file (e.g., buttons.html
 
 View Your Webpage:
 
-Open the downloaded file in a browser (double-click it). You’ll see 10 colorful, pill-shaped buttons (like in images/screenshot_output.png) that open your chosen websites when clicked.
+Open the downloaded file in a browser (double-click it). You’ll see 10 colorful, pill-shaped buttons (like in the second screenshot) that open your chosen websites when clicked.
 
 
 
@@ -102,16 +99,20 @@ The program also creates a temporary file in your computer’s temp folder (e.g.
 Notes
 
 Website Links: Use valid web addresses (e.g., https://example.com). Some defaults like localhost:7860 only work if you have a local server running.
-Port Issues: If the form doesn’t load, port 7860 might be busy. Edit link_programmer.py, find demo.launch(), and change it to demo.launch(port=7861).
+Port Issues: If the form doesn’t load, port 7860 might be busy. Edit link_programmer.py:
+Click link_programmer.py on GitHub.
+Click the pencil icon, find demo.launch(), change to demo.launch(port=7861), and commit with a message like “Change Gradio port”.
+
+
 Permissions: If you see errors, right-click setup_and_run.bat and select "Run as administrator".
 Browsers: The generated webpage works in Chrome, Firefox, Edge, or similar.
 
 Troubleshooting
 
-Python Not Found: Run python --version in Command Prompt. If it fails, install Python and ensure it’s in PATH.
-Gradio Won’t Install: Ensure you’re online. Try pip install gradio in the virtual environment (after source venv/bin/activate or venv\Scripts\activate).
-Form Doesn’t Load: Check the terminal for the correct URL or errors. Try a different browser or port (e.g., 7861).
-No Download Link: Make sure inputs are valid and click "Save Custom Link Maker" again. Check the browser console (F12 > Console) for errors.
+Python Not Found: Open Command Prompt (search "cmd" in Windows) and run python --version. If it fails, install Python and ensure “Add to PATH” is checked.
+Gradio Won’t Install: Ensure you’re online. Contact someone familiar with Python if needed, as this is unsupported.
+Form Doesn’t Load: Check the terminal for the URL or errors. Try a different browser or port (e.g., 7861).
+No Download Link: Ensure inputs are valid and click "Save Custom Link Maker" again. Check the browser console (F12 > Console) for errors.
 
 Support
 This program is provided as-is with no support. There are no guarantees it will work perfectly, and no updates or fixes will be provided. Use it at your own risk. For help with Python or Gradio, check:
@@ -121,9 +122,9 @@ Gradio Documentation
 
 Customization
 
-Change Defaults: Open link_programmer.py in a text editor (like Notepad) and edit the default_links list to set new default names and links.
-Change Button Colors: In link_programmer.py, find the html_content section and edit the .pill-button-X styles (e.g., change #007bff to another color code).
-Change Form Style: In link_programmer.py, edit the css section in gr.Blocks to adjust the form’s look (e.g., fonts or colors).
+Change Defaults: Open link_programmer.py in a text editor (like Notepad), find the default_links list, and edit names/URLs. Upload the updated file via GitHub.
+Change Button Colors: In link_programmer.py, find html_content and edit .pill-button-X styles (e.g., change #007bff to another color code).
+Change Form Style: In link_programmer.py, edit the css section in gr.Blocks to adjust the form’s look.
 
 License
 This project is unlicensed. You can use, modify, or share it freely, but no warranty or support is provided.
